@@ -25,6 +25,7 @@ class ModelFactory:
             model = models.vgg11(weights=weights)
             if in_channels != 3: 
                 model.features[0] = nn.Conv2d(in_channels, 64, kernel_size = 3, padding=1)
+            model.features[20] = nn.Identity()
             model.classifier[6] = nn.Linear(model.classifier[6].in_features, num_classes)
             return model
         else: 

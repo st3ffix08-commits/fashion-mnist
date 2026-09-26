@@ -1,3 +1,7 @@
+import torch
+import torch.nn as nn 
+from torchvision import models
+
 class Trainer:
     def __init__(self, model, criterion, optimizer, device):
         self.model = model

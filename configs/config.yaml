@@ -1,0 +1,15 @@
+seed: 42
+
+data:
+  root: './data/raw'
+  batch_size: 64
+
+model:
+  name: 'vgg11'
+  num_classes: 10
+  in_channels: 1
+
+training:
+  epochs: 5
+  lr: 0.001
+  save_dir: 'model_checkpoints'

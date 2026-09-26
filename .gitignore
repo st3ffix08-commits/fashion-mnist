@@ -1,1 +1,5 @@
 data/
+model_checkpoints/
+.venv/
+*.pth
+

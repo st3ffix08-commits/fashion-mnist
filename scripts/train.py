@@ -3,7 +3,7 @@ import yaml
 import torch
 import torch.nn as nn
 
-from src.data.dataset import get_dataloaders
+from src.data1.dataset import get_dataloaders
 from src.models.factory import ModelFactory
 from src.utils.trainer import Trainer
 

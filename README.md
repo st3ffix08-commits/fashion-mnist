@@ -6,20 +6,6 @@
 
 ```bash
 pip install -r requirements.txt
-Структура проекта
-Plaintext
-├── configs/
-│   └── config.yaml          # Параметры обучения и выбор модели
-├── model_checkpoints/       # Сохраненные веса (.pth)
-├── scripts/
-│   ├── train.py             # Обучение модели
-│   └── evaluate_all.py      # Сводная таблица метрик по всем чекпоинтам
-├── src/
-│   ├── data/                # Загрузка и предобработка FashionMNIST
-│   ├── models/              # Архитектуры и ModelFactory
-│   └── utils/               # Логика обучения (Trainer)
-└── requirements.txt         # Зависимости проекта
-Обучение
 В configs/config.yaml укажи нужную архитектуру в поле model.name (resnet18, vgg11 или alexnet).
 
 Запусти тренировку:
@@ -33,3 +19,13 @@ python -m scripts.train
 
 Bash
 python -m scripts.evaluate_all
+
+## Как запустить работу и проверить свое изображение (ВАЖНО!! Модель обучена на данных FashionMNIST, так что определять может только 10 вещей)
+## "T-shirt/top", "Trouser", "Pullover", "Dress", "Coat",
+##    "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"
+
+##закидываешь картинку в папку images
+
+##запускаешь через консоль 
+
+python scripts/infer.py images/test.jpg ##там лежим уже 1 тестовая картинка с интернета

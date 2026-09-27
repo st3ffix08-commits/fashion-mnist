@@ -2,7 +2,7 @@
 
 Обучение и сравнение сверточных моделей (ResNet-18, VGG-11, AlexNet) на датасете FashionMNIST.
 
-## Установка
+## Установка и Запуск
 
 ```bash
 pip install -r requirements.txt

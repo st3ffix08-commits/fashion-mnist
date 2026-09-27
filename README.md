@@ -6,7 +6,7 @@
 
 ```bash
 pip install -r requirements.txt
-В configs/config.yaml укажи нужную архитектуру в поле model.name (resnet18, vgg11 или alexnet).
+В configs/config.yaml укажи нужную архитектуру в поле model.name (resnet18, vgg11 или alexnet). По умолчанию resnet18
 
 Запусти тренировку:
 
@@ -28,4 +28,4 @@ python -m scripts.evaluate_all
 
 запускаешь через консоль 
 
-python scripts/infer.py images/test.jpg ##там лежим уже 1 тестовая картинка с интернета
+python scripts/infer.py images/test.jpg ##там лежит уже 1 тестовая картинка с интернета

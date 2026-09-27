@@ -20,12 +20,12 @@ python -m scripts.train
 Bash
 python -m scripts.evaluate_all
 
-## Как запустить работу и проверить свое изображение (ВАЖНО!! Модель обучена на данных FashionMNIST, так что определять может только 10 вещей)
-## "T-shirt/top", "Trouser", "Pullover", "Dress", "Coat",
-##    "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"
+Как запустить работу и проверить свое изображение (ВАЖНО!! Модель обучена на данных FashionMNIST, так что определять может только 10 вещей)
+    "T-shirt/top", "Trouser", "Pullover", "Dress", "Coat",
+    "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"
 
-##закидываешь картинку в папку images
+закидываешь картинку в папку images
 
-##запускаешь через консоль 
+запускаешь через консоль 
 
 python scripts/infer.py images/test.jpg ##там лежим уже 1 тестовая картинка с интернета
